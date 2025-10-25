@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tab-area">
+      <h1>Tabs</h1>
+      <div class="tab-btn">
+        <button class="active-btn" onclick="openTab(this,'one')">one</button>
+        <button onclick="openTab(this,'two')">two</button>
+        <button onclick="openTab(this ,'three')">three</button>
+      </div>
+
+      <div class="tab-content active-content" id="one">
+        <div>
+          <h4>tab one</h4>
+          <p>
+            tab one Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Odio accusantium quis corporis! Dolor, perferendis sapiente. Nam
+            sunt facilis ipsa commodi totam mollitia eligendi, adipisci, error
+            recusandae excepturi assumenda cupiditate est.
+          </p>
+        </div>
+      </div>
+      <div class="tab-content" id="two">
+        <div>
+          <h4>tab two</h4>
+          <p>
+            tab two Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Odio accusantium quis corporis! Dolor, perferendis sapiente. Nam
+            sunt facilis ipsa commodi totam mollitia eligendi, adipisci, error
+            recusandae excepturi assumenda cupiditate est.
+          </p>
+        </div>
+      </div>
+      <div class="tab-content" id="three">
+        <div>
+          <h4>tab three</h4>
+          <p>
+            tab three Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Odio accusantium quis corporis! Dolor, perferendis sapiente. Nam
+            sunt facilis ipsa commodi totam mollitia eligendi, adipisci, error
+            recusandae excepturi assumenda cupiditate est.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

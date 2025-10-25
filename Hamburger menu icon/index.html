@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger menu icon</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function hamburgerToggler(element) {
+        element.classList.toggle("hamburger-toggler");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hamburger-icon" onclick="hamburgerToggler(this)">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </div>
+    </div>
+  </body>
+</html>
