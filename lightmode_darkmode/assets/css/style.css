@@ -1,0 +1,122 @@
+:root {
+  --base-color: #f1f5f9;
+  --text-color: #1a1a1a;
+  --primary-color: #3b25c1;
+  --accent-color: #2e1e94;
+  --base-variant: #000;
+  --shadow-color: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  --footer-color: #000;
+  --headingColor: red;
+}
+.darkMode {
+  --base-color: #171717;
+  --text-color: #ffffff;
+  --primary-color: #3b25c1;
+  --accent-color: #2e1e94;
+  --base-variant: #000;
+  --shadow-color: rgba(248, 243, 243, 0.945) 0px 1px 2px 0px;
+  --footer-color: #2e1e94;
+  --headingColor: orange;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--base-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.header-area {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  box-shadow: var(--shadow-color);
+}
+
+.header-area .logo {
+  font-size: 50px;
+}
+.header-area .main-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-area .main-menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.header-area .main-menu ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 10px 20px;
+}
+
+.header-area .main-menu ul li a:hover {
+  background: var(--secondary-text);
+  border-radius: 10px;
+}
+
+.theme-switch {
+  cursor: pointer;
+}
+.theme-switch svg {
+  display: none;
+}
+
+.hero-area {
+  width: 100%;
+  height: calc(100vh - 159px);
+  display: flex;
+}
+
+.hero-area .hero-content {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+.hero-area .hero-content h1 {
+  font-size: 60px;
+  text-transform: capitalize;
+  background: var(--headingColor);
+}
+.hero-area .hero-content p {
+  font-size: 18px;
+}
+
+.hero-area .hero-content button {
+  background-color: var(--primary-color);
+  color: var(--base-color);
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.hero-area .hero-content button:hover {
+  background-color: var(--accent-color);
+}
+
+footer {
+  background-color: var(--footer-color);
+  color: var(--base-color);
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  font-size: 20px;
+}
