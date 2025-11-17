@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.header-area {
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.header-area nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.header-area nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+  padding: 5px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+.header-area nav ul li a:hover {
+  color: white;
+  background-color: orange;
+}
+.hero-area,
+.blog-area,
+.about-area {
+  width: 100%;
+  height: 90vh;
+  background-color: rgb(138, 109, 109);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-area {
+  background-color: rgb(73, 11, 11);
+}
+.blog-area {
+  background-color: rgb(11, 73, 55);
+}
+
+.scroll-to-top-btn {
+  width: 50px;
+  height: 50px;
+
+  background-color: orange;
+
+  font-size: 20px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  opacity: 0;
+  visibility: none;
+  transition: opacity 0.5s ease-in-out;
+}
