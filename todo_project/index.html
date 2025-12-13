@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sumit Saha, Learn with Sumit" />
+    <meta name="description" content="We love JavaScript" />
+    <!-- Font Awesome -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <title>TODO App - Vanilla JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <div class="logo">
+        <!-- <img src="images/logo.svg" alt="DevZiaus Logo" /> -->
+      </div>
+      <h1 id="header" class="header">To-Do App</h1>
+
+      <!--/container-->
+      <form class="new-task-container box" id="new-task-container">
+        <label for="new-task">Add New Task</label>
+        <input type="text" id="new-task" name="task" />
+        <input type="submit" id="addTask" value="Add Task" />
+      </form>
+
+      <!--/todo-list-->
+      <div class="todo-lists">
+        <!-- Incomplete List -->
+        <div class="todo-list box">
+          <h2>Incomplete Tasks</h2>
+
+          <div id="incomplete-items"></div>
+        </div>
+
+        <!--/complete-list-->
+        <div class="complete-list box">
+          <h2>Completed Tasks</h2>
+          <div id="complete-items"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="toast" id="toast">message</div>
+  </body>
+</html>
