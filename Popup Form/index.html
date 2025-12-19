@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pop up form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="login-area">
+        <div class="container">
+          <h3>Popup Form</h3>
+          <p>
+            Click on the button at the bottom of this page to open the login
+            form.
+          </p>
+          <p>
+            Note that the button and the form is fixed - they will always be
+            positioned to the bottom of the browser window.
+          </p>
+        </div>
+
+        <div class="login-form shadow">
+          <form onsubmit="handleSubmit(event)">
+            <h4>login page</h4>
+            <label for="email">Email</label>
+            <input type="email" placeholder="type email" name="email" />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              placeholder="type password"
+              name="password"
+            />
+            <button class="btn">Login</button>
+          </form>
+          <button class="btn" id="form-toggler">close</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
